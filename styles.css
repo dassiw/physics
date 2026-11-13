@@ -1,0 +1,98 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fb;
+  color: #1f2a44;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 2rem 1rem 3rem;
+}
+
+.subtitle {
+  margin-top: 0;
+  color: #4b5a80;
+}
+
+#phases {
+  display: grid;
+  gap: 1rem;
+}
+
+.phase-card {
+  background: #fff;
+  border: 1px solid #d8def1;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.phase-card.locked {
+  opacity: 0.65;
+}
+
+.phase-title {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.phase-action {
+  margin: 0.4rem 0 1rem;
+}
+
+.checklist {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.checklist label {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+
+.complete-btn {
+  background: #165ef0;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+}
+
+.complete-btn:disabled {
+  background: #9cb3f0;
+  cursor: not-allowed;
+}
+
+.phase-output {
+  margin: 0.75rem 0 0;
+  font-weight: 600;
+  color: #0c6d3f;
+}
+
+.loop {
+  margin-top: 1.5rem;
+  background: #eef3ff;
+  border: 1px solid #c9d9ff;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+#restart-loop {
+  background: #2c7a36;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: 0.5rem 0.8rem;
+}
+
+#restart-loop:disabled {
+  background: #97bb9d;
+}
