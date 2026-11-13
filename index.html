@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exam Preparation Workflow</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Exam Preparation Workflow</h1>
+      <p class="subtitle">Complete each phase to unlock the next step in your SAT-style prep loop.</p>
+
+      <section id="phases" aria-label="Preparation phases"></section>
+
+      <section class="loop" aria-live="polite">
+        <h2>Full-Length Simulation Loop</h2>
+        <p id="loop-status">Complete Phase 5 to unlock the improvement loop back to Phase 2.</p>
+        <button id="restart-loop" disabled>Start next Phase 2-5 cycle</button>
+      </section>
+    </main>
+
+    <template id="phase-template">
+      <article class="phase-card">
+        <header>
+          <h2 class="phase-title"></h2>
+          <p class="phase-action"></p>
+        </header>
+        <div class="checklist"></div>
+        <button class="complete-btn" type="button">Mark complete</button>
+        <p class="phase-output"></p>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
